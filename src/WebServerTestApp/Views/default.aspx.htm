@@ -1,0 +1,23 @@
+﻿<html>
+  <head>
+    <title>Embedded web server</title>
+    <script type="text/javascript" src="/Scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("tr:even").css("background-color", "lightgray");
+        });
+    </script>
+  </head>
+  <body>
+    <h1>
+      <table style="border:solid 1px #000000">
+        #foreach($h in $sv)
+           <tr>
+                <td style="border:solid 1px gray">$h.key</td>
+                <td style="border:solid 1px gray">$h.value</td>
+           </tr>
+        #end
+      </table>
+    </h1>    
+  </body>
+</html>
